@@ -1,0 +1,4 @@
+YesIntent yes
+YesIntent sure
+NoIntent no
+NoIntent go away
