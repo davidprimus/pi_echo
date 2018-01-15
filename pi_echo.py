@@ -20,7 +20,7 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 sensor = BME280(t_mode=BME280_OSAMPLE_8, p_mode=BME280_OSAMPLE_8, h_mode=BME280_OSAMPLE_8)
 
 @ask.launch
-# the Intro function is executed upon AVS request
+# the Intro function is executed upon AVS skill launch
 def Intro():
 	# must read temperature before humidity and pressure to enable compensation
 	degreesC = round(sensor.read_temperature(), 1)
